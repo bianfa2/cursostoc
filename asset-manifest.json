@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/cursostoc/static/css/main.d8a0e08f.chunk.css",
+    "main.js": "/cursostoc/static/js/main.3da8d477.chunk.js",
+    "main.js.map": "/cursostoc/static/js/main.3da8d477.chunk.js.map",
+    "runtime-main.js": "/cursostoc/static/js/runtime-main.2538466f.js",
+    "runtime-main.js.map": "/cursostoc/static/js/runtime-main.2538466f.js.map",
+    "static/css/2.59405167.chunk.css": "/cursostoc/static/css/2.59405167.chunk.css",
+    "static/js/2.369bdc6d.chunk.js": "/cursostoc/static/js/2.369bdc6d.chunk.js",
+    "static/js/2.369bdc6d.chunk.js.map": "/cursostoc/static/js/2.369bdc6d.chunk.js.map",
+    "index.html": "/cursostoc/index.html",
+    "precache-manifest.1b5a60a754705cc5f438cafa0e155cab.js": "/cursostoc/precache-manifest.1b5a60a754705cc5f438cafa0e155cab.js",
+    "service-worker.js": "/cursostoc/service-worker.js",
+    "static/css/2.59405167.chunk.css.map": "/cursostoc/static/css/2.59405167.chunk.css.map",
+    "static/css/main.d8a0e08f.chunk.css.map": "/cursostoc/static/css/main.d8a0e08f.chunk.css.map",
+    "static/js/2.369bdc6d.chunk.js.LICENSE.txt": "/cursostoc/static/js/2.369bdc6d.chunk.js.LICENSE.txt",
+    "static/media/click.png": "/cursostoc/static/media/click.578ccad8.png",
+    "static/media/comment.png": "/cursostoc/static/media/comment.9d892e73.png",
+    "static/media/documents.png": "/cursostoc/static/media/documents.780803f5.png",
+    "static/media/lens.png": "/cursostoc/static/media/lens.321d4f8e.png",
+    "static/media/Main.scss": "/cursostoc/static/media/logo.6027d4f1.png",
+    "static/media/phone.png": "/cursostoc/static/media/phone.b286b60d.png",
+    "static/media/points.png": "/cursostoc/static/media/points.7b2cede0.png",
+    "static/media/puzzle.png": "/cursostoc/static/media/puzzle.cf6bbe7f.png",
+    "static/media/statistics.png": "/cursostoc/static/media/statistics.65128d90.png",
+    "static/media/statistics2.png": "/cursostoc/static/media/statistics2.78e83891.png",
+    "static/media/touch.png": "/cursostoc/static/media/touch.290a2465.png",
+    "static/media/touch2.png": "/cursostoc/static/media/touch2.0ecfbad6.png",
+    "static/media/Logoup.scss": "/cursostoc/static/media/upload.2fe16f0f.svg",
+    "static/media/whatsapp.jpg": "/cursostoc/static/media/whatsapp.fd184c5c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2538466f.js",
+    "static/css/2.59405167.chunk.css",
+    "static/js/2.369bdc6d.chunk.js",
+    "static/css/main.d8a0e08f.chunk.css",
+    "static/js/main.3da8d477.chunk.js"
+  ]
+}
