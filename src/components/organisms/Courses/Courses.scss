@@ -1,0 +1,101 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.courses {
+  width: 100%;
+  color: $secondary_color;
+
+  .content {
+    width: 100%;
+    font-size: 2em;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    max-width: 1400px;
+    color: $secondary_color;
+
+    img {
+      float: left;
+      width: 30%;
+    }
+  }
+
+  &__first-slider {
+    padding: 30px;
+    min-height: 50vh;
+    &__title {
+      width: fit-content;
+      margin: 0 auto;
+      display: flex;
+
+      h2 {
+        font-family: "Alegreya Sans";
+        font-weight: 900;
+        font-size: 9em;
+        text-align: center;
+      }
+      img {
+        width: 25em;
+      }
+    }
+  }
+
+  &__second-slider {
+    padding: 30px;
+    min-height: 80vh;
+    img {
+      float: right !important;
+    }
+    p {
+      text-align: left;
+    }
+  }
+
+  .highlighter {
+    font-weight: bold;
+    color: $secondary_color;
+  }
+}
+
+@include from($medium) {
+  .courses {
+    &__first-slider {
+      &__title {
+        flex-direction: column;
+
+        h2 {
+          font-size: 7em;
+        }
+        img {
+          width: 20em;
+        }
+      }
+    }
+  }
+}
+
+@include from($small) {
+  .courses {
+    &__first-slider {
+      &__title {
+        flex-direction: column;
+
+        h2 {
+          font-size: 5em;
+        }
+        img {
+          width: 15em;
+        }
+      }
+
+      .content {
+        text-align: left;
+      }
+    }
+
+    .content {
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+  }
+}

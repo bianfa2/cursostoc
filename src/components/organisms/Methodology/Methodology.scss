@@ -1,0 +1,112 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.methodology {
+  width: 100%;
+  color: $secondary_color;
+
+  .content {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    color: $secondary_color;
+    font-size: 2em;
+
+    h2 {
+      margin-bottom: 100px;
+      font-weight: 700;
+      margin-left: 60px;
+    }
+
+    img {
+      float: left;
+      width: 30%;
+      margin-right: 10%;
+    }
+  }
+
+  &__first-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    min-height: 90vh;
+  }
+
+  &__second-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 50px;
+    min-height: 90vh;
+
+    .content {
+      & > h2 {
+        margin: 0;
+        color: $third_color;
+      }
+
+      & > img {
+        margin: 0;
+        margin-top: 3em;
+
+        width: 35%;
+        float: right;
+      }
+    }
+  }
+
+  &__third-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+    min-height: 90vh;
+
+    .content {
+      & > img {
+        margin-top: 3em;
+        width: 40%;
+      }
+    }
+  }
+
+  .highlighter {
+    font-weight: bold;
+    color: $secondary_color;
+  }
+
+  @include from($medium) {
+    &__second-slider {
+      margin-top: -20px;
+    }
+  }
+
+  @include from($small) {
+    .content {
+      font-size: 1.5em;
+
+      h2 {
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: 40px;
+        font-size: 2em;
+      }
+    }
+
+    &__second-slider {
+      margin-top: -50px;
+      .content {
+        & > img {
+          margin-left: 50%;
+        }
+      }
+    }
+
+    &__third-slider {
+      margin-top: -50px;
+    }
+  }
+}

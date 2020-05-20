@@ -1,0 +1,401 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+#slider1 {
+  img {
+    position: absolute;
+    bottom: 90px;
+    left: 6%;
+    width: 30%;
+  }
+
+  .content {
+    float: right;
+    margin-right: 10%;
+    width: 50rem;
+    text-align: center;
+    .title {
+      h2 {
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 9em;
+        font-family: "Alegreya Sans";
+        font-weight: 900;
+        color: $secondary_color;
+      }
+      .logo {
+        vertical-align: middle;
+        display: inline-block;
+        width: 23em;
+        height: 15em;
+        background-image: url("../../../assets/logo.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    p {
+      font-size: 2.2em;
+    }
+  }
+
+  @include from($large) {
+    .content {
+      float: none;
+      width: 90%;
+      margin: 5% auto 0;
+    }
+  }
+
+  @include from($s-medium) {
+    img {
+      bottom: 20%;
+      left: 28%;
+      width: 55%;
+    }
+
+    .content {
+      font-size: 6px;
+
+      p {
+        font-size: 3.5em;
+      }
+    }
+  }
+
+  @include from($s-small) {
+    img {
+      left: 35%;
+      width: 40%;
+    }
+
+    .content {
+      margin: -20% auto 0;
+    }
+  }
+}
+
+#slider2 {
+  .down-button {
+    background-color: $secondary_color;
+  }
+
+  img {
+    position: relative;
+    float: right;
+    width: 30%;
+    margin: 5% 5% 0 0;
+  }
+
+  .content {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    width: 46.5rem;
+    margin: 5% 0 0 6%;
+    text-align: left;
+
+    h2 {
+      color: $third_color;
+      font-weight: 700;
+    }
+
+    p {
+      width: 83%;
+      font-size: 1.8em;
+    }
+  }
+
+  @include from($xx-large) {
+    img {
+      width: 24%;
+    }
+  }
+
+  @include from($s-medium) {
+    img {
+      position: absolute;
+      bottom: 9%;
+      right: 0;
+      left: 32%;
+      margin: 0;
+      width: 40%;
+    }
+
+    .content {
+      font-size: 6px;
+      width: 90%;
+      text-align: center;
+      margin-top: 0;
+
+      h2 {
+        font-size: 5em;
+      }
+
+      p {
+        width: 100%;
+        font-size: 3.5em;
+      }
+    }
+  }
+
+  @include from($s-small) {
+    img {
+      display: none;
+    }
+
+    .content {
+      margin: -20% auto 0;
+    }
+  }
+}
+
+#slider3 {
+  background-color: $secondary_color;
+  color: #ecf2fe;
+
+  h3 {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 4em;
+    line-height: 1.7em;
+  }
+
+  .monthly {
+    font-weight: 600;
+    font-size: 1.6em;
+
+    &__para {
+      font-size: 0.75em;
+      font-weight: 300;
+    }
+  }
+
+  .free-test {
+    color: $third_color;
+    font-size: 1.7em;
+    position: relative;
+    top: 25%;
+  }
+
+  @include from($s-medium) {
+    .free-test {
+      top: 10%;
+    }
+  }
+}
+
+#slider4 {
+  background-color: $third_color;
+  h2 {
+    color: $secondary_color;
+    font-weight: 700;
+  }
+
+  .carousel .carousel-item {
+    width: 400px;
+
+    .card {
+      background-color: $secondary_color;
+
+      &-content {
+        color: white;
+        font-size: 1.5rem;
+      }
+
+      &-action {
+        color: #ffab40;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @include from($s-medium) {
+    font-size: 6px;
+
+    h2 {
+      font-size: 5em;
+    }
+
+    .carousel .carousel-item {
+      margin-top: -30%;
+      padding: 0 10%;
+    }
+  }
+}
+
+#slider5 {
+  background-color: $secondary_color;
+  color: $primary_color;
+
+  h2 {
+    font-size: 5em;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 5% auto 7%;
+    padding: 0 15%;
+    width: fit-content;
+    font-size: 2em;
+  }
+
+  hr {
+    position: relative;
+    width: 60%;
+    height: 2px;
+    margin-bottom: 8%;
+    background-color: $third_color;
+    border-color: $third_color;
+  }
+
+  hr::before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: -12.5px;
+    left: -2px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: $third_color;
+  }
+
+  hr::after {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: -12.5px;
+    right: -2px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: $third_color;
+  }
+
+  .contacts {
+    margin: 10px 0 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    &::after {
+      content: "";
+      background-image: url("../../../assets/email.png");
+      background-size: cover;
+      position: relative;
+      top: 15px;
+      left: 15px;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @include from($s-medium) {
+    font-size: 9px;
+  }
+
+  @include from($s-small) {
+    font-size: 7px;
+  }
+}
+
+#slider6 {
+  .slider6__container {
+    width: 93%;
+    height: 70vh;
+    margin: 7% auto 0;
+
+    img {
+      position: relative;
+      float: left;
+      margin-top: 5%;
+      width: 30%;
+    }
+
+    &__content {
+      max-width: 1000px;
+      width: 70%;
+      height: 100%;
+      display: inline-block;
+      &__title {
+        h2 {
+          display: inline-block;
+          font-size: 7em;
+          font-family: "Alegreya Sans";
+          font-weight: 500;
+          color: $secondary_color;
+          line-height: 90%;
+          vertical-align: middle;
+        }
+        .logo {
+          vertical-align: middle;
+          display: inline-block;
+          width: 15em;
+          height: 7em;
+          background-image: url("../../../assets/logo.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+      p {
+        font-size: 2.2em;
+      }
+    }
+
+    & > p {
+      position: relative;
+      font-size: 2em;
+      font-weight: bold;
+      bottom: 6%;
+
+      a {
+        color: $third_color;
+        text-decoration: underline;
+      }
+    }
+    @include from($medium) {
+      &__content {
+        font-size: 12px;
+      }
+
+      & > p {
+        font-size: 1.5em;
+      }
+    }
+
+    @include from($s-medium) {
+      img {
+        display: none;
+      }
+    }
+
+    @include from($small) {
+      &__content {
+        font-size: 10px;
+      }
+
+      & > p {
+        font-size: 1.2em;
+      }
+    }
+
+    @include from($s-small) {
+      &__content {
+        font-size: 7px;
+      }
+
+      & > p {
+        font-size: 1em;
+        bottom: 8%;
+      }
+    }
+  }
+}
+
+.highlighter {
+  color: $third_color;
+  font-weight: 600;
+}

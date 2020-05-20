@@ -1,0 +1,73 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.questions {
+  width: 100%;
+  color: $secondary_color;
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  h2 {
+    font-weight: 700;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+
+    & > img {
+      width: 25%;
+    }
+  }
+
+  .post-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 170px 0;
+
+    &__content {
+      text-align: center;
+      max-width: 500px;
+      word-wrap: break-word;
+
+      & > h5 {
+        color: $third_color;
+      }
+
+      & > a {
+        font-size: 1.7em;
+      }
+
+      & > p {
+        color: $secondary_color;
+      }
+    }
+
+    & > img {
+      position: relative;
+      top: 120px;
+      width: 18%;
+    }
+  }
+
+  .highlighter {
+    font-weight: bold;
+    color: $third_color;
+  }
+
+  @include from($medium) {
+    .post-data {
+      &__content {
+        max-width: 100vw;
+      }
+
+      & > img {
+        display: none;
+      }
+    }
+  }
+}

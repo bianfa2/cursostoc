@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+
+.navbar {
+  background-color: $primary_color;
+  color: $secondary_color;
+  padding-left: 25px;
+
+  .logo {
+    width: 8rem;
+  }
+
+  a {
+    color: #343a40;
+  }
+}
+
+.btn {
+  background-color: #61d4b3;
+}
